@@ -1,0 +1,19 @@
+# Week 4 Assignment
+#File Read & Write Challenge 🖋️:
+# Create a program that reads a file and writes a modified version to a new file.
+
+#Step 1: Read the original file first
+
+try:
+    with open(r"F:\Projectreal\WebDevplp\main.txt") as file1:
+        open_file = file1.read()
+
+#Step 2 Write or append and save to a file2.txt
+    with open(r"F:\Projectreal\WebDevplp\modified.txt", "w") as file2:
+        file2.write(open_file)
+        file2.write("\n")
+        file2.write("Here we code and chill")
+    print("Old file modified and new content added successfully")
+
+except  FileNotFoundError:
+         print("What was the name of the original file?, please check if it exists")
