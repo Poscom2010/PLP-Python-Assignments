@@ -1,0 +1,67 @@
+#Week 5 Assignment
+#Assignment 1: Design Your Own Class! 🏗️
+#Create a class representing anything you like (a Smartphone, Book, or even a Superhero!).
+#Add attributes and methods to bring the class to life!
+#Use constructors to initialize each object with unique values.
+#Add an inheritance layer to explore polymorphism or encapsulation.
+
+#Defining a baby class and its attributes
+```
+class Baby:
+    def __init__(self,race,skin_color,hair_color):
+        self.race = race
+        self.skin_color = skin_color
+        self.hair_color = hair_color
+
+    # Defining methods or actions
+    def speak(self):
+            return ("Tataaa!😛")
+    def walk(self):
+            return ("Iam crawling")
+     #creating an object
+baby1 = Baby("African","black","white")
+baby2 =Baby("Asian","coloured","black")
+
+    #Calling the class
+print(baby1.speak())
+print(baby1.race)
+print(baby2.skin_color)
+print(baby1.walk())
+```
+
+#Activity 2: Polymorphism Challenge! 🎭
+#Create a program that includes animals or vehicles with the same action (like move()).
+#However, make each class define move() differently (for example, Car.move() prints "Driving" 🚗,
+# while Plane.move() prints "Flying" ✈️).
+```
+class Cow:
+    def __init__(self,color,breed_type):
+        self.color = color
+
+
+        # Defining Methods
+    def speak(self):
+        return ("Mooooh!")
+    def move(self):
+        return ("Cow is walking slowly")
+
+class Donkey:
+    def __init__(self,color,breed_type):
+        self.color = color
+        self.breed_type = breed_type
+
+    def speak(self):
+        return ("Aaaawuh!!")
+    def move(self):
+        return ("Donkey is trotting")
+
+#Polymorphism in action
+animals =[
+    Cow ("black","dairy breed"),
+    Donkey ("white","Miniature")
+]
+#Using the move method polymorphically
+
+for animal in animals:
+    print(animal.move())
+```
